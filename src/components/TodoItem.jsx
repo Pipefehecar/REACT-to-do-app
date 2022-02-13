@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 export  function TodoItem({todo,toggleTodo}) {
   const {id, task, completed} = todo;
-  const checkedRef = useRef();
+  //const checkedRef = useRef();
   const handledCheck = () => {
     toggleTodo(id);
   };

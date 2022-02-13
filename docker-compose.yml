@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+    app: 
+      image: node:14.17.3-alpine
+      volumes: 
+          - ./:/app:cached
+      working_dir: /app
+      ports: 
+        - 8400:3000
+      command: npm start
+      tty: true
